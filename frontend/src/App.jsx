@@ -13,6 +13,7 @@ function App() {
 
     const [prompt, setPrompt] = useState(0)
     const URL = 'http://localhost:5051/api/todos'; 
+    const navigate = useNavigate();
    
     useEffect(() => {
         const fetchData = async () => {
@@ -46,6 +47,8 @@ function App() {
             }
             const updatedData = await response.text();
             setPrompt(updatedData);
+
+            navigate('/output', {state: {userInput: UserInput}});
         } catch (error) {
             console.error('Error adding todo:', error);
         }
