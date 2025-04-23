@@ -20,6 +20,8 @@ def base():
     return 'home page'
 
 
+# Create an entry
+# Must provide **author**, **parent ID**, **entry ID**, and **body**
 @app.route('/api/entry/', methods=['POST'])
 def create_entry():
     database = client.get_database(DATABASE_NAME)
@@ -31,6 +33,7 @@ def create_entry():
     database.close()
 
 
+# Get entry with entry ID
 @app.route('/api/entry/<int:entry_id>', methods=['GET'])
 def get_entry(entry_id):
     database = client.get_database(DATABASE_NAME)
@@ -48,3 +51,10 @@ def get_entry(entry_id):
     
     database.close()
     return result
+
+
+# Get latest entry in collection
+@app.route('/api/entry', methods=['GET'])
+def get_latest_entry():
+    # TODO I have no idea how to to do this
+    return None
