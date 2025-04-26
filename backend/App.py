@@ -1,6 +1,7 @@
 from flask import Flask, request
 from pymongo import MongoClient
 from flask_cors import CORS
+from typing import TypedDict
 
 uri = 'mongodb+srv://kenjiromai333:JMubL0jWPdXn5vXL@todo.tmfewz4.mongodb.net/?retryWrites=true&w=majority&appName=Todo'
 
@@ -14,8 +15,8 @@ CORS(app)
 
 # Object representing an entry in the system
 class Entry(TypedDict):
-    entry_id: int,
-    parent_id: int,
+    entry_id: int
+    parent_id: int
     body: str
 
 
