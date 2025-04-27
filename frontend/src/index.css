@@ -1,0 +1,11 @@
+input[type="InputBox"] {
+    width: 200px;
+}
+.Card {
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 500px;
+    height: 500px;
+}

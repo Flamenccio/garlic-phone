@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\garlic-phone\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\garlic-phone\\src\\App.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\App.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\garlic-phone\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\garlic-phone\\src\\main.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\main.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\garlic-phone\\src\\assets\\react.svg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\assets\\react.svg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\garlic-phone\\public\\vite.svg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\vite.svg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "vite.svg",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\garlic-phone\\public\\vite.svg",
+              "RelativeDocumentMoniker": "public\\vite.svg",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\garlic-phone\\public\\vite.svg",
+              "RelativeToolTip": "public\\vite.svg",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAACcAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAqISURBVFhHzZdZbBxXdoa/ulW9Ve9cRLK5iRRJWSJFWbJsQZITWYYdWEYSeOwECDIzL4MZ5yHwQwYIJjEQYF7yGPjBjpMnwxgkwSSOk9HY1kzsjD2yIdsRI8sSrYWiuInNXtj7Wr1U1c2DSLrZpOQJkIf8wEFXnXur7n/POfev0/D/CVJKpd3XiqGhob6XX375h8ALgGgdk1Iipdx2v5u/1bdh5994441XZ2dnb26btIEHEhodHT30yiuvfHD8\u002BPFuVVV3zG1fuB2b46ZpkkgkyGQyFAqF9NLS0pW33nrrb2ZmZt5vf0Ztd7QiHA4PPPvss382PT2teL1ePB7Phrlxuzev72\u002B6rqPrOh6PByklyWSSiYkJ3eFw9Om63ler1fJra2vzrWt\u002BE6G\u002Bs2fPvjg2NoYQAthMS/tMG6w8inUdpXEJpX4B6p8izUWkLbHpRFVVlpaWOHDgAIFAwCGE6NM0rbtWqxVisdgWqf8Voe0pkki7CVYcpfkZVD9AFN\u002BH4q\u002BRlS\u002BRxhzUbqNUo0jbieIeZnFxkaHhYbq6ulAUxSmEiLjd7oBhGHfi8Xic34TQM8888\u002BL4\u002BDgNS5KtNkmX6uSqNRqNLA7zOkrtPZTCTyD5Dka\u002BQb0SoN4cp2Huw6oLlMo8qjFPQ/8dorEYDqeTcrmMaZrUajWnqqrhcDgsLl68\u002BAEgtXYSrZASmpYkVaqTKDVZyRvkKgYaSUb0Lzmon8dtXKCc9VLK9pB0vYDqewS/rwOv5kBTDHQ\u002Bw1v5V6xmk66uTm7fvo1hVDFNC5/PRyQS6V1cXDwOuADj/oRUTbFdPjVZhX\u002B7Gme1ZBIMaeyPVDji/zWD9k8hM08\u002B0c3n1T9kxnqa9YSDXr\u002BPU6EODvd34NMkdr6K1K4hpWR8bIy\u002BSATDMBBC4Pf7yWZzfPLJJxrgeyAhz95H/J7n/mLfxynBcL\u002BL4aMDPOb7ijH1TfyVd2BtlUx2ipk9f8WCOIYUAWolhdvRFIlr68QLBqcf6qXPH0ZpdKNqGi5dR/f6tsRGCJViscSG/DhpF7tNeCef7Og8\u002B6e/5Q4Hnxt54jiHpjp5KvAR\u002B7W/x5d7DxbjLGVP8h/\u002Bv\u002BQr7RhGoBtXOEBPJIBnpJd0Rw8X4g3en42SKNpIxz4UIVAUpc1AURQ2CCnsRsj38DPu4Mk/mu7ZN/Kt008ePDE97OJx938yKN7Ck/oVLMT54u5xzsVe4MpyL4nlCqXVNKbRwKkqBIMevN1BCt4glzI2H803KDuOoDqd99Xh1tO7g5AjFBnvG5946uhU/4njo67eY87P6eXfca5/CAsx4pUzWH0/4Mjhs/zeoXGeGAgwLCzKcyvY\u002BRIeh0Iw6MIZDpAWHq4k4Iu4F9Xh2IwGUm5qmbLjU7ONkP7Q43pgdHpq71DHiccmvEOH3Dccg/JnOLIfIRdj5JpnsPq/x9D\u002Bp3l0Yi8nxvZwYqSTU0MhxlwS0nlEs4HuVvEFXSgBP1FbZ2a5TLluYkvZEiTZIrT3IeSdONk7cOjowQODnpFDHWveYfkuzuIHsLjCfGKaQs/3Ce99gu6OLtxOFSEUQrqT8T1\u002Bfnt/D2qxhKwYuFTQPSqugAfD42U5W2MxWcSyd0j8DmwjpCgMD/XoE0d686ER\u002BT6\u002ByjnslSXShQN8aH6bZTnJUl5yPZbnejTP9bU816M5bsXyGA2TZrWKbJhoQuJyCDweFc2lUTBVbkZzmLa9EY2d3cAmth17pyYioyFjYNJ/zddl/Av22hyl9QFmRn5EXJngznINlqPYgLQ3XruxgKIoKKpK0KOhqQoOqeBQBarLQUV1czdTwbIkOO6ttVlH7R3DFiGv10unXw2Nub8KDpq/1MjeoLrew1cDP2B96Dn2TfgA0bY3sFsumpakYSnUTRCWjaoJFIeG4XSTLuWxdzx9D7vW0Ntvv81f/8mj/VPBzzq0/FUaKUHCdZi54RfB4wVNQdFAtJmmgSZAqOBQwbFRtJYtwbJA2tiAZW1RfyC2IuQTn\u002BoTfUavWr4aJJVgvXGUy6N/juIKoiC49aub1Mr1exmyN/dqfx12CdKWSAm2lJiWxLQt9KaNz7YZ2ONFKLu1LrvU0JtvvslD\u002B24f1bX/GsCIaonqGFcDz5PxT\u002BMWKlZDUivUeGpfJ/1hHWWzdJCbB3ezoLZevDmOBEUBn9uB26HuKOh2CIAzZ86IcKj5uKiv9llFw1w2p6zLnifJSw\u002BGJWlaNprLQcjrZLTbx8H\u002BEJMDISYHwkwNhJgaCDM5EGZyoGPLpgY3bKiDycEOhrr8CGWHDu8ujHbxF37M2UOinAuspoKlL0pjlRWrj2LdptKwaUrwdPmZS1VYL9Z37FFKqDZMLtxY42czi/z8vxd59/IS5y8v8\u002BHsKpcXkqSL1XvC\u002BA0QALLw9hD1a3tEscy1WF/0UrzvbrnUrBUrJpW6Rd2WeHvCrBgms7E80UyZWtPElja1pk2iUGVmcZ1fzq3z3nKR8zGD9\u002BI13r1b4vytdT6fi1E3rW9MF5uEFLswSr3qkWUzG406ryzcac4UYtl4ulC38pUmlYaFGvAiuoNcy9X4eCHN1dUcN9byXF3NcnEhzS/m1ml0dhGc2o8\u002BPYk4\u002BBBm/wC2R6fT7yHS4ds1Zex27KVVDtBsaGaJVdfK0ufN2SsXlm6ufLkey\u002BfX8zUyJZOyKdH7u9CGerhVV/jp1Th/98kC/3D5Lp\u002Bma4jhQZzDEZq6Tq5mEVvLU7mbYEwxePrhvRufsJ0R2r2G6oYtG5ZsVMk515MpX2b1UiOZ\u002BsfozI2ZVDRHIt8kXWmQq0ssvx/fgWF6Tk4ROX2UjhOH0Q\u002BOY/X2UhIO1osm0dUc9YUVDgiDpx7eS4fP1UKgVaF3EhQARrF\u002B227KquZAUzXovn0xtffjn1wQRvWfvDev4YrGiSWrrGTrrFVMUnVJxhbkUCkoGilLEC/WWUlUySxGCa3McabT4vcfGWSkJ9i\u002B5gMhAF79UerW6q3mNYefjlAv/QFPU7WWvyg0PvrbOyfDBo/6oGtpEeftJYyFGImlNIsrReZXy9xdypObW6M2ewf9xiz7y3GeP9DN88dGGO8LoantdbMzMq0pUwF683azK0SuI4w30sfo5CFGT51q9p8\u002BVp8ajPQ/feLIY\u002BzrDBEQ4DCqaKUSIpuBZBI9n6XXqrDXaXFiwMeT\u002B3t4eG8XPSEdl2N7y95\u002B6oUQ5HI5ZmZm4pcuXfpnoKgCNAGy5JLLZKMrlJIJirl18vWK360NnfrdY4\u002BcZk84SLfXyWDAzXjYzcFON9N7PBzp83E4EuBQf4jJgQ6G9wQI6E5UsT0yW8rdAiEE2Wx2G6Gt/m0fKPq9zt\u002B9ETm7e3Bw6rs//vHHf/yd76AoCrZtt4T86/54ewvx9XWrezdCmuZgYWGB119//fJrr732LSC6tY0FkLNQn4XCLGRnIX9HUaqqw4HY\u002BMcghPgNTG2ze35VFaiqus02e\u002BxWtFdcO5qWZa0nk0mZSqVIp9Ok0xlSqQypVHrL0unMlm33338slUqTTCbJZDKNZrNZ3GytdlJsQSQS6XvppZd\u002BKKX8AymlBijtQrZ5v\u002Bnb7bfd14p6vZ6cn59/59y5c68CmQcSaoELCLTU1/8lLMAASkD9fwAdCGBwUJykHwAAAABJRU5ErkJggg==",
+              "WhenOpened": "2025-04-16T19:44:46.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\garlic-phone\\index.html",
+              "RelativeDocumentMoniker": "index.html",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\garlic-phone\\index.html",
+              "RelativeToolTip": "index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-15T20:24:52.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "main.jsx",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\garlic-phone\\src\\main.jsx",
+              "RelativeDocumentMoniker": "src\\main.jsx",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\garlic-phone\\src\\main.jsx",
+              "RelativeToolTip": "src\\main.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-04-15T20:24:43.764Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "react.svg",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\garlic-phone\\src\\assets\\react.svg",
+              "RelativeDocumentMoniker": "src\\assets\\react.svg",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\garlic-phone\\src\\assets\\react.svg",
+              "RelativeToolTip": "src\\assets\\react.svg",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAqISURBVFhHzZdZbBxXdoa/ulW9Ve9cRLK5iRRJWSJFWbJsQZITWYYdWEYSeOwECDIzL4MZ5yHwQwYIJjEQYF7yGPjBjpMnwxgkwSSOk9HY1kzsjD2yIdsRI8sSrYWiuInNXtj7Wr1U1c2DSLrZpOQJkIf8wEFXnXur7n/POfev0/D/CVJKpd3XiqGhob6XX375h8ALgGgdk1Iipdx2v5u/1bdh5994441XZ2dnb26btIEHEhodHT30yiuvfHD8\u002BPFuVVV3zG1fuB2b46ZpkkgkyGQyFAqF9NLS0pW33nrrb2ZmZt5vf0Ztd7QiHA4PPPvss382PT2teL1ePB7Phrlxuzev72\u002B6rqPrOh6PByklyWSSiYkJ3eFw9Om63ler1fJra2vzrWt\u002BE6G\u002Bs2fPvjg2NoYQAthMS/tMG6w8inUdpXEJpX4B6p8izUWkLbHpRFVVlpaWOHDgAIFAwCGE6NM0rbtWqxVisdgWqf8Voe0pkki7CVYcpfkZVD9AFN\u002BH4q\u002BRlS\u002BRxhzUbqNUo0jbieIeZnFxkaHhYbq6ulAUxSmEiLjd7oBhGHfi8Xic34TQM8888\u002BL4\u002BDgNS5KtNkmX6uSqNRqNLA7zOkrtPZTCTyD5Dka\u002BQb0SoN4cp2Huw6oLlMo8qjFPQ/8dorEYDqeTcrmMaZrUajWnqqrhcDgsLl68\u002BAEgtXYSrZASmpYkVaqTKDVZyRvkKgYaSUb0Lzmon8dtXKCc9VLK9pB0vYDqewS/rwOv5kBTDHQ\u002Bw1v5V6xmk66uTm7fvo1hVDFNC5/PRyQS6V1cXDwOuADj/oRUTbFdPjVZhX\u002B7Gme1ZBIMaeyPVDji/zWD9k8hM08\u002B0c3n1T9kxnqa9YSDXr\u002BPU6EODvd34NMkdr6K1K4hpWR8bIy\u002BSATDMBBC4Pf7yWZzfPLJJxrgeyAhz95H/J7n/mLfxynBcL\u002BL4aMDPOb7ijH1TfyVd2BtlUx2ipk9f8WCOIYUAWolhdvRFIlr68QLBqcf6qXPH0ZpdKNqGi5dR/f6tsRGCJViscSG/DhpF7tNeCef7Og8\u002B6e/5Q4Hnxt54jiHpjp5KvAR\u002B7W/x5d7DxbjLGVP8h/\u002Bv\u002BQr7RhGoBtXOEBPJIBnpJd0Rw8X4g3en42SKNpIxz4UIVAUpc1AURQ2CCnsRsj38DPu4Mk/mu7ZN/Kt008ePDE97OJx938yKN7Ck/oVLMT54u5xzsVe4MpyL4nlCqXVNKbRwKkqBIMevN1BCt4glzI2H803KDuOoDqd99Xh1tO7g5AjFBnvG5946uhU/4njo67eY87P6eXfca5/CAsx4pUzWH0/4Mjhs/zeoXGeGAgwLCzKcyvY\u002BRIeh0Iw6MIZDpAWHq4k4Iu4F9Xh2IwGUm5qmbLjU7ONkP7Q43pgdHpq71DHiccmvEOH3Dccg/JnOLIfIRdj5JpnsPq/x9D\u002Bp3l0Yi8nxvZwYqSTU0MhxlwS0nlEs4HuVvEFXSgBP1FbZ2a5TLluYkvZEiTZIrT3IeSdONk7cOjowQODnpFDHWveYfkuzuIHsLjCfGKaQs/3Ce99gu6OLtxOFSEUQrqT8T1\u002Bfnt/D2qxhKwYuFTQPSqugAfD42U5W2MxWcSyd0j8DmwjpCgMD/XoE0d686ER\u002BT6\u002ByjnslSXShQN8aH6bZTnJUl5yPZbnejTP9bU816M5bsXyGA2TZrWKbJhoQuJyCDweFc2lUTBVbkZzmLa9EY2d3cAmth17pyYioyFjYNJ/zddl/Av22hyl9QFmRn5EXJngznINlqPYgLQ3XruxgKIoKKpK0KOhqQoOqeBQBarLQUV1czdTwbIkOO6ttVlH7R3DFiGv10unXw2Nub8KDpq/1MjeoLrew1cDP2B96Dn2TfgA0bY3sFsumpakYSnUTRCWjaoJFIeG4XSTLuWxdzx9D7vW0Ntvv81f/8mj/VPBzzq0/FUaKUHCdZi54RfB4wVNQdFAtJmmgSZAqOBQwbFRtJYtwbJA2tiAZW1RfyC2IuQTn\u002BoTfUavWr4aJJVgvXGUy6N/juIKoiC49aub1Mr1exmyN/dqfx12CdKWSAm2lJiWxLQt9KaNz7YZ2ONFKLu1LrvU0JtvvslD\u002B24f1bX/GsCIaonqGFcDz5PxT\u002BMWKlZDUivUeGpfJ/1hHWWzdJCbB3ezoLZevDmOBEUBn9uB26HuKOh2CIAzZ86IcKj5uKiv9llFw1w2p6zLnifJSw\u002BGJWlaNprLQcjrZLTbx8H\u002BEJMDISYHwkwNhJgaCDM5EGZyoGPLpgY3bKiDycEOhrr8CGWHDu8ujHbxF37M2UOinAuspoKlL0pjlRWrj2LdptKwaUrwdPmZS1VYL9Z37FFKqDZMLtxY42czi/z8vxd59/IS5y8v8\u002BHsKpcXkqSL1XvC\u002BA0QALLw9hD1a3tEscy1WF/0UrzvbrnUrBUrJpW6Rd2WeHvCrBgms7E80UyZWtPElja1pk2iUGVmcZ1fzq3z3nKR8zGD9\u002BI13r1b4vytdT6fi1E3rW9MF5uEFLswSr3qkWUzG406ryzcac4UYtl4ulC38pUmlYaFGvAiuoNcy9X4eCHN1dUcN9byXF3NcnEhzS/m1ml0dhGc2o8\u002BPYk4\u002BBBm/wC2R6fT7yHS4ds1Zex27KVVDtBsaGaJVdfK0ufN2SsXlm6ufLkey\u002BfX8zUyJZOyKdH7u9CGerhVV/jp1Th/98kC/3D5Lp\u002Bma4jhQZzDEZq6Tq5mEVvLU7mbYEwxePrhvRufsJ0R2r2G6oYtG5ZsVMk515MpX2b1UiOZ\u002BsfozI2ZVDRHIt8kXWmQq0ssvx/fgWF6Tk4ROX2UjhOH0Q\u002BOY/X2UhIO1osm0dUc9YUVDgiDpx7eS4fP1UKgVaF3EhQARrF\u002B227KquZAUzXovn0xtffjn1wQRvWfvDev4YrGiSWrrGTrrFVMUnVJxhbkUCkoGilLEC/WWUlUySxGCa3McabT4vcfGWSkJ9i\u002B5gMhAF79UerW6q3mNYefjlAv/QFPU7WWvyg0PvrbOyfDBo/6oGtpEeftJYyFGImlNIsrReZXy9xdypObW6M2ewf9xiz7y3GeP9DN88dGGO8LoantdbMzMq0pUwF683azK0SuI4w30sfo5CFGT51q9p8\u002BVp8ajPQ/feLIY\u002BzrDBEQ4DCqaKUSIpuBZBI9n6XXqrDXaXFiwMeT\u002B3t4eG8XPSEdl2N7y95\u002B6oUQ5HI5ZmZm4pcuXfpnoKgCNAGy5JLLZKMrlJIJirl18vWK360NnfrdY4\u002BcZk84SLfXyWDAzXjYzcFON9N7PBzp83E4EuBQf4jJgQ6G9wQI6E5UsT0yW8rdAiEE2Wx2G6Gt/m0fKPq9zt\u002B9ETm7e3Bw6rs//vHHf/yd76AoCrZtt4T86/54ewvx9XWrezdCmuZgYWGB119//fJrr732LSC6tY0FkLNQn4XCLGRnIX9HUaqqw4HY\u002BMcghPgNTG2ze35VFaiqus02e\u002BxWtFdcO5qWZa0nk0mZSqVIp9Ok0xlSqQypVHrL0unMlm33338slUqTTCbJZDKNZrNZ3GytdlJsQSQS6XvppZd\u002BKKX8AymlBijtQrZ5v\u002Bnb7bfd14p6vZ6cn59/59y5c68CmQcSaoELCLTU1/8lLMAASkD9fwAdCGBwUJykHwAAAABJRU5ErkJggg==",
+              "WhenOpened": "2025-04-15T20:24:25.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "App.jsx",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\garlic-phone\\src\\App.jsx",
+              "RelativeDocumentMoniker": "src\\App.jsx",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\garlic-phone\\src\\App.jsx",
+              "RelativeToolTip": "src\\App.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-04-15T13:48:42.647Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
