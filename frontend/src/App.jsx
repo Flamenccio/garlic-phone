@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react'
+import { useNavigate } from 'react-router-dom';
 //import reactLogo from './assets/react.svg'
 //import viteLogo from '/vite.svg'
 import './App.css'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Form from 'react-bootstrap/Form';
+import OutputPage from './components/OutputPage'; 
 
 function App() {
 
@@ -47,12 +49,15 @@ function App() {
             }
             const updatedData = await response.text();
             setPrompt(updatedData);
-
-            navigate('/output', {state: {userInput: UserInput}});
         } catch (error) {
             console.error('Error adding todo:', error);
         }
     };
+
+    const navigateToResults = () => {
+        navigate('/output');
+    }
+
     /* 
     Generally there will be two parts: One to show the prompt, and another for the input box.
     The prompt part will just be a simple outlined box
@@ -74,6 +79,7 @@ function App() {
 
                 <Button variant="primary" onClick={() => handlePushPrompt()}>Submit</Button>
 
+                <Button variant="primary" onClick={() => navigate('/output')}>View Results</Button>
             </Card.Body>
         </Card>
     );
