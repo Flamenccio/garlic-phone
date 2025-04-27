@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom';
-//import reactLogo from './assets/react.svg'
-//import viteLogo from '/vite.svg'
 import './App.css'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Form from 'react-bootstrap/Form';
 import OutputPage from './components/OutputPage'; 
+import GarlicImage from './assets/Garlic-image.png';
+import PhoneImage from './assets/Phone-image.png';
 
 function App() {
 
@@ -67,8 +67,35 @@ function App() {
         <Card style={{ width: '0rem' }}>
             <Card.Body>
 
-                <Card.Title className="Title">Garlic Phone</Card.Title>
+                <div style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    gap: '8px'
+                }}>
+                    <img
+                        src={GarlicImage}
+                        alt = "Garlic Image"
+                        style ={{
+                            height: '60px',
+                            width: 'auto',
+                            marginRight: '0'
+                        }}
+                    />
+                
+                    <Card.Title className="Title">Garlic Phone</Card.Title>
 
+                    <img
+                        src = {PhoneImage}
+                        alt = ""
+                        style = {{
+                            height: '60px',
+                            width: 'auto',
+                            marginLeft: '0'
+                        }}
+                    />
+
+                </div>
                 <Card.Text className="Text">
                     {prompt}
                 </Card.Text>

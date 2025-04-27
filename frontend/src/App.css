@@ -9,8 +9,10 @@
     flex-direction: row;
     margin: 0px;
     padding: 10px 10px 10px 0%;
-    font-family: sans-serif;
-    font-size: 40pt;
+    font-family: 'Courier Prime', monospace;
+    font-size: 43pt;
+    font-weight: 500; 
+    margin: 0;
 }
 
 .card {
@@ -24,8 +26,8 @@
 
 .Text {
     display: flex;
-    width: 500px;
-    height: 200px;
+    width: 600px;
+    height: 100px;
     border: dashed 2px gray;
     justify-content: space-between;
     text-align: center;
@@ -33,12 +35,21 @@
     flex-direction: row;
     margin: 10px;
     padding: 10px 10px 10px 10px;
-    font-family: sans-serif;
-    font-size: 10pt;
-    box-shadow: 0px 3px 5px rgb(224, 224, 224);
+    font-family: 'Courier Prime', monospace;
+    font-size: 20pt;
+    box-shadow: 0px 3px 5px rgb(107, 106, 106);
 }
 
 .InputField {
     display: flex;
     text-align: center;
+    width: 200px;
+    height: 100px;
+}
+
+.title-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px; 
 }

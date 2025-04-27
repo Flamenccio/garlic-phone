@@ -9,3 +9,14 @@ input[type="InputBox"] {
     width: 500px;
     height: 500px;
 }
+
+body {
+    background-color: #ffffe6; /* Soft yellow base */
+    background-image: 
+      linear-gradient(#f5f5dc 1px, transparent 1px),
+      linear-gradient(90deg, #f5f5dc 1px, transparent 1px);
+    background-size: 30px 30px; /* Line spacing */
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+  }
