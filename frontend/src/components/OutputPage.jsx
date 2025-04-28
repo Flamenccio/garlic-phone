@@ -1,21 +1,67 @@
 import { useLocation } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
+import '../App.css'
 import Button from 'react-bootstrap/Button';
+import TypeWriterButton from '../assets/Type-Writer-Button.png'
+import GarlicImage from '../assets/Garlic-image.png';
+import PhoneImage from '../assets/Phone-image.png';
 
 function OutputPage() {
     const location = useLocation();
     const navigate = useNavigate();
-    const {userInput} = location.state || {}; 
+    const { userInput } = location.state || {};
 
-    return(
-        <Card style = {{width: '0rem'}}>
+    return (
+        <Card style={{ width: '0rem' }}>
             <Card.Body>
-                <Card.Title className="Title">Final Story</Card.Title>
+
+                <div style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    gap: '8px'
+                }}>
+                    <img
+                        src={GarlicImage}
+                        alt="Garlic Image"
+                        style={{
+                            height: '60px',
+                            width: 'auto',
+                            marginRight: '0'
+                        }}
+                    />
+
+                    <Card.Title className="Title">Final Story</Card.Title>
+
+                    <img
+                        src={PhoneImage}
+                        alt=""
+                        style={{
+                            height: '60px',
+                            width: 'auto',
+                            marginLeft: '0'
+                        }}
+                    />
+
+                </div>
+
                 <Card.Text className="Text">
                     This will be loaded from the database.
                 </Card.Text>
-                <Button variant = "secondary" onClick={() => navigate (-1)} className="mt-3">Back</Button>
+
+                <div className="custom-buttons">
+                    <Button variant="secondary"
+                        onClick={() => navigate(-1)}
+                        className="image-button"
+                        style={{
+                            backgroundImage: `url(${TypeWriterButton})`,
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center'
+                        }}
+                    >Back
+                    </Button>
+                </div>
             </Card.Body>
         </Card>
     );

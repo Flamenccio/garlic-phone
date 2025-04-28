@@ -53,3 +53,43 @@
     justify-content: center;
     margin-bottom: 15px; 
 }
+
+.custom-button{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+  .image-button {
+    width: 120px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    display: block;
+    
+    color: white;
+    font-family: 'Courier New', monospace;
+    font-size: 18px;
+    font-weight: normal;
+    
+    margin: 10px auto;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .image-button:hover {
+    transform: scale(1.02);
+    filter: brightness(1.1);
+  }
+  
+  .image-button:active {
+    transform: scale(0.98);
+  }
+  
+  .button-text {
+    position: relative;
+    z-index: 1;
+    pointer-events: none;
+  }
