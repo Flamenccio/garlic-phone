@@ -14,19 +14,21 @@ function App() {
     //We can use useState to fetch the current prompt from the database.
     //let prompt = "This will be the prompt loaded in from the database. ";
 
-    const [prompt, setPrompt] = useState(0)
-    const URL = 'http://localhost:5051/api/todos';
+    const [prompt, setPrompt] = useState('')
+    const [lastID, setLastID] = useState(0)
+    const URL = 'http://localhost:5000/api/entry/';
     const navigate = useNavigate();
 
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch(URL);
+                const response = await fetch(URL + lastID);
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
                 const data = await response.json();
-                setPrompt(data);
+                console.log(data);
+                setPrompt(data.body);
             } catch (error) {
                 console.error('Error fetching prompt:', error);
                 setPrompt("This will be the prompt loaded in from the database.");
@@ -39,17 +41,22 @@ function App() {
 
     const handlePushPrompt = async () => {
         let UserInput = document.getElementById("InputField").value
+        const reply = {entry_id: lastID + 1, parent_id: lastID, body: UserInput}
+        console.log(JSON.stringify(reply))
         try {
             const response = await fetch(URL, {
                 method: 'POST',
-                headers: { 'Content-Type': 'text/plain' },
-                body: UserInput,
-            });
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(reply)
+            })
             if (!response.ok) {
                 throw new Error(response.status)
             }
-            const updatedData = await response.text();
-            setPrompt(updatedData);
+            setLastID((prevLastID) =>{
+                const newLastID=prevLastID+1;
+                return newLastID
+            });
+            console.log(lastID)
         } catch (error) {
             console.error('Error adding todo:', error);
         }
