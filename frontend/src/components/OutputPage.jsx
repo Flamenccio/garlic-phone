@@ -7,63 +7,75 @@ import TypeWriterButton from '../assets/Type-Writer-Button.png'
 import GarlicImage from '../assets/Garlic-image.png';
 import PhoneImage from '../assets/Phone-image.png';
 
+//Below separate for testing purposes
+import NavBar from './NavBar'
+
 function OutputPage() {
     const location = useLocation();
     const navigate = useNavigate();
     const { userInput } = location.state || {};
 
+    const navBarData = {
+        PageName: "Output Page",
+        dispGarlicImage: GarlicImage,
+    }
+
     return (
-        <Card style={{ width: '0rem' }}>
-            <Card.Body>
 
-                <div style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    gap: '8px'
-                }}>
-                    <img
-                        src={GarlicImage}
-                        alt="Garlic Image"
-                        style={{
-                            height: '60px',
-                            width: 'auto',
-                            marginRight: '0'
-                        }}
-                    />
+        <div>
+            <NavBar dispGarlicImage={navBarData.dispGarlicImage} PageName={navBarData.PageName} />
+            <Card style={{ width: '0rem' }}>
+                <Card.Body>
 
-                    <Card.Title className="Title">Final Story</Card.Title>
+                    <div style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        gap: '8px'
+                    }}>
+                        <img
+                            src={GarlicImage}
+                            alt="Garlic Image"
+                            style={{
+                                height: '60px',
+                                width: 'auto',
+                                marginRight: '0'
+                            }}
+                        />
 
-                    <img
-                        src={PhoneImage}
-                        alt=""
-                        style={{
-                            height: '60px',
-                            width: 'auto',
-                            marginLeft: '0'
-                        }}
-                    />
+                        <Card.Title className="Title">Final Story</Card.Title>
 
-                </div>
+                        <img
+                            src={PhoneImage}
+                            alt=""
+                            style={{
+                                height: '60px',
+                                width: 'auto',
+                                marginLeft: '0'
+                            }}
+                        />
 
-                <Card.Text className="Text">
-                    This will be loaded from the database.
-                </Card.Text>
+                    </div>
 
-                <div className="custom-buttons">
-                    <Button variant="secondary"
-                        onClick={() => navigate(-1)}
-                        className="image-button"
-                        style={{
-                            backgroundImage: `url(${TypeWriterButton})`,
-                            backgroundSize: 'cover',
-                            backgroundPosition: 'center'
-                        }}
-                    >Back
-                    </Button>
-                </div>
-            </Card.Body>
-        </Card>
+                    <Card.Text className="Text">
+                        This will be loaded from the database.
+                    </Card.Text>
+
+                    <div className="custom-buttons">
+                        <Button variant="secondary"
+                            onClick={() => navigate(-1)}
+                            className="image-button"
+                            style={{
+                                backgroundImage: `url(${TypeWriterButton})`,
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center'
+                            }}
+                        >Back
+                        </Button>
+                    </div>
+                </Card.Body>
+            </Card>
+        </div>
     );
 }
 
