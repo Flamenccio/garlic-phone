@@ -8,6 +8,8 @@ import OutputPage from './components/OutputPage';
 import GarlicImage from './assets/Garlic-image.png';
 import PhoneImage from './assets/Phone-image.png';
 import TypeWriterButton from './assets/Type-Writer-Button.png'
+import ShowPrompt from './components/Prompt'
+import NavBar from './components/NavBar'
 
 function App() {
 
@@ -71,76 +73,56 @@ function App() {
     The prompt part will just be a simple outlined box
     The input part will be a text input field and a submit button right below
     */
+    //Parameters for the prompt card.
+    const promptData = {
+        dispPrompt: prompt,
+        dispPhoneImage: PhoneImage,
+        dispGarlicImage: GarlicImage,
+    }
+
+    const navBarData = {
+        PageName: "Input Page",
+        dispGarlicImage: GarlicImage,
+    }
     return (
-        <Card style={{ width: '0rem' }}>
-            <Card.Body>
+        <div>
+            <NavBar dispGarlicImage={navBarData.dispGarlicImage} PageName={navBarData.PageName} />
+            <ShowPrompt dispPrompt={promptData.dispPrompt} dispPhoneImage={promptData.dispPhoneImage} dispGarlicImage={promptData.dispGarlicImage} />
 
-                <div style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    gap: '8px'
-                }}>
-                    <img
-                        src={GarlicImage}
-                        alt="Garlic Image"
-                        style={{
-                            height: '60px',
-                            width: 'auto',
-                            marginRight: '0'
-                        }}
-                    />
+            <Card style={{ width: '0rem' }}>
+                <Card.Body>
+                    <input className="InputFieldPrompt" type="text"></input>
 
-                    <Card.Title className="Title">Garlic Phone</Card.Title>
+                    <div className="custom-buttons">
+                        <button
+                            variant="primary"
+                            className="image-button"
+                            style={{
+                                backgroundImage: `url(${TypeWriterButton})`,
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center'
+                            }}
+                            onClick={() => handlePushPrompt()}
+                        >
+                            <span className="button-text">Submit</span>
+                        </button>
 
-                    <img
-                        src={PhoneImage}
-                        alt=""
-                        style={{
-                            height: '60px',
-                            width: 'auto',
-                            marginLeft: '0'
-                        }}
-                    />
-
-                </div>
-                <Card.Text className="Text">
-                    {prompt}
-                </Card.Text>
-
-                <Form.Group className="mb-3" controlId="InputField">
-                    <Form.Control as="textarea" rows={3} />
-                </Form.Group>
-
-                <div className="custom-buttons">
-                    <button
-                        variant="primary"
-                        className="image-button"
-                        style={{
-                            backgroundImage: `url(${TypeWriterButton})`,
-                            backgroundSize: 'cover',
-                            backgroundPosition: 'center'
-                        }}
-                        onClick={() => handlePushPrompt()}
-                    >
-                        <span className="button-text">Submit</span>
-                    </button>
-
-                    <button
-                        variant="primary"
-                        className="image-button"
-                        style={{
-                            backgroundImage: `url(${TypeWriterButton})`,
-                            backgroundSize: 'cover',
-                            backgroundPosition: 'center'
-                        }}
-                        onClick={() => navigate('/output')}
-                    >
-                        <span className="button-text">Results</span>
-                    </button>
-                </div>
-            </Card.Body>
-        </Card>
+                        <button
+                            variant="primary"
+                            className="image-button"
+                            style={{
+                                backgroundImage: `url(${TypeWriterButton})`,
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center'
+                            }}
+                            onClick={() => navigate('/output')}
+                        >
+                            <span className="button-text">Results</span>
+                        </button>
+                    </div>
+                </Card.Body>
+            </Card>
+        </div>
     );
 }
 
