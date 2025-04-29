@@ -16,13 +16,13 @@ function App() {
 
     const [prompt, setPrompt] = useState('')
     const [lastID, setLastID] = useState(0)
-    const URL = 'http://localhost:5000/api/entry/';
+    const URL = "/api/entry/";
     const navigate = useNavigate();
 
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch(URL + lastID);
+                const response = await fetch(`${URL}${lastID}`);
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
@@ -37,12 +37,12 @@ function App() {
         if (!prompt) {
             fetchData();
         }
-    });
+    }, [lastID]);
 
     const handlePushPrompt = async () => {
         let UserInput = document.getElementById("InputField").value
-        const reply = {entry_id: lastID + 1, parent_id: lastID, body: UserInput}
-        console.log(JSON.stringify(reply))
+        const reply = {entry_ID: lastID + 1, parent_ID: lastID, body: UserInput}
+        //console.log(JSON.stringify(reply))
         try {
             const response = await fetch(URL, {
                 method: 'POST',
