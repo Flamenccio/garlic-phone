@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import { useLocation } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
@@ -11,6 +12,27 @@ function OutputPage() {
     const location = useLocation();
     const navigate = useNavigate();
     const { userInput } = location.state || {};
+
+    const server = 'http://localhost:5000'
+
+    const [data, setData] = useState([]);
+
+    useEffect(() =>{
+       try{
+	        fetch(server + '/api/results/3').then(res=>{
+			    if (!res.ok){
+					throw new Error ('Network response was not ok');
+				}
+				return res.json();
+			}).then(d=>{
+				console.log(d);
+                setData(d)
+			});
+	   }
+	   catch(error) {
+			console.error('Error data:', error)
+	   }
+    }, []);
 
     return (
         <Card style={{ width: '0rem' }}>
@@ -47,7 +69,9 @@ function OutputPage() {
                 </div>
 
                 <Card.Text className="Text">
-                    This will be loaded from the database.
+                    <ol>
+                    {data.slice().reverse().map((item, index) => (<li key={index}>{item}</li>))}
+                    </ol>
                 </Card.Text>
 
                 <div className="custom-buttons">
