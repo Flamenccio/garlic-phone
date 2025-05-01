@@ -7,6 +7,7 @@ import Button from 'react-bootstrap/Button';
 import TypeWriterButton from '../assets/Type-Writer-Button.png'
 import GarlicImage from '../assets/Garlic-image.png';
 import PhoneImage from '../assets/Phone-image.png';
+import NavBar from './NavBar'
 
 function OutputPage() {
     const location = useLocation();
@@ -34,60 +35,68 @@ function OutputPage() {
 	   }
     }, []);
 
+    const navBarData = {
+        PageName: "Output Page",
+        dispGarlicImage: GarlicImage,
+    }
+
     return (
-        <Card style={{ width: '0rem' }}>
-            <Card.Body>
+        <div>
+            <NavBar dispGarlicImage={navBarData.dispGarlicImage} PageName={navBarData.PageName} />
+            <Card style={{ width: '0rem' }}>
+                <Card.Body>
 
-                <div style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    gap: '8px'
-                }}>
-                    <img
-                        src={GarlicImage}
-                        alt="Garlic Image"
-                        style={{
-                            height: '60px',
-                            width: 'auto',
-                            marginRight: '0'
-                        }}
-                    />
+                    <div style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        gap: '8px'
+                    }}>
+                        <img
+                            src={GarlicImage}
+                            alt="Garlic Image"
+                            style={{
+                                height: '60px',
+                                width: 'auto',
+                                marginRight: '0'
+                            }}
+                        />
 
-                    <Card.Title className="Title">Final Story</Card.Title>
+                        <Card.Title className="Title">Final Story</Card.Title>
 
-                    <img
-                        src={PhoneImage}
-                        alt=""
-                        style={{
-                            height: '60px',
-                            width: 'auto',
-                            marginLeft: '0'
-                        }}
-                    />
+                        <img
+                            src={PhoneImage}
+                            alt=""
+                            style={{
+                                height: '60px',
+                                width: 'auto',
+                                marginLeft: '0'
+                            }}
+                        />
 
-                </div>
+                    </div>
 
-                <Card.Text className="Text">
-                    <ol>
-                    {data.slice().reverse().map((item, index) => (<li key={index}>{item}</li>))}
-                    </ol>
-                </Card.Text>
+                    <Card.Text className="Text">
+                        <ol>
+                            {data.slice().reverse().map((item, index) => (<li key={index}>{item}</li>))}
+                        </ol>
+                    </Card.Text>
 
-                <div className="custom-buttons">
-                    <Button variant="secondary"
-                        onClick={() => navigate(-1)}
-                        className="image-button"
-                        style={{
-                            backgroundImage: `url(${TypeWriterButton})`,
-                            backgroundSize: 'cover',
-                            backgroundPosition: 'center'
-                        }}
-                    >Back
-                    </Button>
-                </div>
-            </Card.Body>
-        </Card>
+                    <div className="custom-buttons">
+                        <Button variant="secondary"
+                            onClick={() => navigate(-1)}
+                            className="image-button"
+                            style={{
+                                backgroundImage: `url(${TypeWriterButton})`,
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center'
+                            }}
+                        >Back
+                        </Button>
+                    </div>
+                </Card.Body>
+            </Card>
+        </div>
     );
 }
 
