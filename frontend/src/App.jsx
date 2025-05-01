@@ -92,7 +92,7 @@ function App() {
 
             <Card style={{ width: '0rem' }}>
                 <Card.Body>
-                    <input className="InputFieldPrompt" type="text"></input>
+                    <input className="InputFieldPrompt" id="InputField" type="text"></input>
 
                     <div className="custom-buttons">
                         <button
