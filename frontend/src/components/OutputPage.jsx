@@ -14,7 +14,7 @@ function OutputPage() {
     const navigate = useNavigate();
     const { userInput } = location.state || {};
 
-    const server = 'http://localhost:5000'
+    const server = ''
 
     const [data, setData] = useState([]);
 

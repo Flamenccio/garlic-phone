@@ -18,13 +18,14 @@ function App() {
 
     const [prompt, setPrompt] = useState('')
     const [lastID, setLastID] = useState(0)
-    const URL = 'http://localhost:5000/api/entry/';
+    const URL = "/api/entry/";
     const navigate = useNavigate();
 
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch(URL + lastID);
+                console.log("prompt is being altered, this is the: " + lastID)
+                const response = await fetch(`${URL}${lastID}`);
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
@@ -39,12 +40,12 @@ function App() {
         if (!prompt) {
             fetchData();
         }
-    });
+    },[lastID]);
 
     const handlePushPrompt = async () => {
         let UserInput = document.getElementById("InputField").value
-        const reply = {entry_id: lastID + 1, parent_id: lastID, body: UserInput}
-        console.log(JSON.stringify(reply))
+        const reply = {body: UserInput, parent_ID: lastID, entry_ID: lastID + 1}
+        console.log("this is the data being sent over: " + JSON.stringify(reply))
         try {
             const response = await fetch(URL, {
                 method: 'POST',
@@ -58,7 +59,7 @@ function App() {
                 const newLastID=prevLastID+1;
                 return newLastID
             });
-            console.log(lastID)
+            console.log("this is the current lastID: " + lastID)
         } catch (error) {
             console.error('Error adding todo:', error);
         }
