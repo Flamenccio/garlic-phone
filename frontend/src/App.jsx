@@ -11,40 +11,62 @@ import TypeWriterButton from './assets/Type-Writer-Button.png'
 import ShowPrompt from './components/Prompt'
 import NavBar from './components/NavBar'
 
+
 function App() {
 
     //We can use useState to fetch the current prompt from the database.
     //let prompt = "This will be the prompt loaded in from the database. ";
 
     const [prompt, setPrompt] = useState('')
-    const [lastID, setLastID] = useState(0)
+    const [lastID, setLastID] = useState(null)
     const URL = "/api/entry/";
     const navigate = useNavigate();
+
+    useEffect(()=>{
+        try{
+	        fetch('/api/latestID').then(res=>{
+			    if (!res.ok){
+					throw new Error ('Network response was not ok');
+				}
+				return res.json();
+			}).then(d=>{
+				console.log("ID received from database is " + d);
+                setLastID(d)
+			});
+	   }
+	   catch(error) {
+			console.error('Error data:', error)
+	   }},[])
 
     useEffect(() => {
         const fetchData = async () => {
             try {
-                console.log("prompt is being altered, this is the: " + lastID)
+                console.log("prompt is being altered, the ID is: " + lastID)
                 const response = await fetch(`${URL}${lastID}`);
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
                 const data = await response.json();
-                console.log(data);
+                //console.log(data);
                 setPrompt(data.body);
             } catch (error) {
                 console.error('Error fetching prompt:', error);
                 setPrompt("This will be the prompt loaded in from the database.");
             }
         };
-        if (!prompt) {
-            fetchData();
-        }
+        fetchData();
     },[lastID]);
 
     const handlePushPrompt = async () => {
         let UserInput = document.getElementById("InputField").value
-        const reply = {body: UserInput, parent_ID: lastID, entry_ID: lastID + 1}
+        let reply = null
+        if (lastID == null) {
+            reply = {body: UserInput, parent_ID: null, entry_ID: 0}
+        }
+        else {
+            reply = {body: UserInput, parent_ID: lastID, entry_ID: lastID + 1}
+        }
+
         console.log("this is the data being sent over: " + JSON.stringify(reply))
         try {
             const response = await fetch(URL, {
@@ -55,10 +77,15 @@ function App() {
             if (!response.ok) {
                 throw new Error(response.status)
             }
-            setLastID((prevLastID) =>{
+
+            if (lastID == null) {
+                setLastID(0)
+            }
+            else{
+                setLastID((prevLastID) =>{
                 const newLastID=prevLastID+1;
-                return newLastID
-            });
+                return newLastID});
+            }
             console.log("this is the current lastID: " + lastID)
         } catch (error) {
             console.error('Error adding todo:', error);
