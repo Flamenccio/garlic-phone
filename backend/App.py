@@ -106,6 +106,25 @@ def get_result(last_id):
 
     return parse_json(entry_list)
 
+@app.route('/api/latestID', methods = ['GET'])
+def findlatestID():
+    database = client.get_database(DATABASE_NAME)
+    collection = database.get_collection(COLLECTION_NAME)
+    current_ID = 0
+
+    current_entry = entry_from_collection(current_ID, collection)
+    if current_entry is None:
+        return jsonify(null)
+
+    while current_entry:
+        current_entry = entry_from_collection(current_ID + 1, collection)
+        if current_entry is None:
+            return jsonify(current_ID)
+        current_ID += 1
+
+    return jsonify(current_ID)
+        
+
 @app.route('/api/clear', methods = ['DELETE'])
 def clear_entries():
     database = client.get_database(DATABASE_NAME)

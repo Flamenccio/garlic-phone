@@ -14,13 +14,33 @@ function OutputPage() {
     const navigate = useNavigate();
     const { userInput } = location.state || {};
 
-    const server = ''
+    const URL = '/api/results/'
 
     const [data, setData] = useState([]);
+    const [ID, setID] = useState(null)
+
+    useEffect(()=>{
+        if (ID == null) {
+            try{
+	            fetch('/api/latestID').then(res=>{
+			        if (!res.ok){
+					    throw new Error ('Network response was not ok');
+				    }
+				    return res.json();
+			    }).then(d=>{
+				    console.log("ID received from database is " + d);
+                    setID(d)
+			    });
+	        }
+	        catch(error) {
+			    console.error('Error data:', error)
+	        }
+        }
+    },[])
 
     useEffect(() =>{
        try{
-	        fetch(server + '/api/results/3').then(res=>{
+	        fetch(`${URL}${ID}`).then(res=>{
 			    if (!res.ok){
 					throw new Error ('Network response was not ok');
 				}
@@ -32,8 +52,9 @@ function OutputPage() {
 	   }
 	   catch(error) {
 			console.error('Error data:', error)
+            setData['please wait']
 	   }
-    }, []);
+    }, [ID]);
 
     const navBarData = {
         PageName: "Output Page",
